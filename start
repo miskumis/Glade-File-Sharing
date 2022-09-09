@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+#
+#
+# Copyright (C) 2022-2023 by miskumis@Github, <https://github.com/miskumis >.
+# Attemp to Terminate and Remove previous session
+if [ ! -d .git ]; then
+    git clone https://github.com/mrismanaziz/File-Sharing-Man -b master tmp_git
+    mv tmp_git/.git .
+    rm -rf tmp_git
+fi
+
+# start
+python3 main.py
